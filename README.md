@@ -17,15 +17,17 @@ The `Vim-Config` includes the follwing files/folders:
 - `.vimrc`. The config for `vim`.
 - `indexer_files`. The config for `indexer`. Each project's path info should be specified in `indexer_files`. This file should be placed at `~`.
 - `.ycm_extra_conf.py`. The config for `YouCompleteMe`. You should adjust the `flag` part of it according to your project. This file should be placed at the root path of the project.
-- `.vim`. All the necessary plugins as well as three color themes. The `YouCompleteMe` Config needs further configuration.
+- `.vim`. All the necessary plugins as well as three color themes. The `YouCompleteMe` is also needed (see below).
 - You may also want to check `~/.vim/bundle/ultisnips/mysnippets/cpp.snippets` to see the coding templates.
 - `libstd.man.tar.bz2`. The manual for *Standard C++*. Extract the `man3` folder from it into `/usr/share/man/`.
 
 ## YouCompleteMe
 
-The `YouCompleteMe` Config primarily serves for smart completion and statical syntatics based on syntax analysis of your C++ codes. First you need to obtain the dependencies by
+The `YouCompleteMe` Config primarily serves for smart completion and statical syntatics based on syntax analysis of your C++ codes. First you need to obtain `YouCompleteMe` as well as the dependencies by
 
 ~~~
+cd ~/.vim/bundle/
+sudo git clone git@github.com:Valloric/YouCompleteMe.git
 cd ~/.vim/bundle/YouCompleteMe/ 
 git submodule update --init --recursive
 ~~~
