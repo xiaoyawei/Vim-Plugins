@@ -1,4 +1,7 @@
 " syntax 
+" define <Leader>
+let mapleader=";"
+
 syntax enable
 syntax on
 " display line number
@@ -56,9 +59,6 @@ set softtabstop=4
 set hlsearch
 " block from linux custom ends
 
-" define <Leader>
-let mapleader=";"
-
 " block from linux custom begins
 " find the lines with blanks at end (fs -> find space)
 map <leader>fs :/.*\s\+$<CR>
@@ -70,6 +70,7 @@ map <leader>res :s#\s\+$##<CR>
 map <Leader>nh :nohl<CR>
 
 " shortcuts for line begining and end nmap lb ^
+nmap lb ^
 nmap le $
 " copy to X buffers
 vnoremap <Leader>y "+y
@@ -338,3 +339,19 @@ map <Leader>ah :HeaderguardAdd<cr>
 set shortmess=a
 " get rid of Press Enter to continue
 set cmdheight=2
+
+" setup for DoxygenToolKit
+let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
+let g:DoxygenToolkit_paramTag_pre="@Param "
+let g:DoxygenToolkit_returnTag="@Returns   "
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+let g:DoxygenToolkit_authorName="Xiaoya Wei"
+let g:DoxygenToolkit_licenseTag="General Public License v3.0"
+" let g:DoxygenToolkit_commentType = "C++"
+
+" shortcuts for DoxygenToolKit
+map <Leader>da :DoxAuthor<cr>
+map <Leader>dl :DoxLic<cr>
+map <Leader>dd :Dox<cr>
+map <Leader>db :DoxBlock<cr>
