@@ -330,3 +330,11 @@ nmap <Leader>g :!rm -rf main<CR>:wa<CR>:make<CR>:cw<CR><CR>:!./main<CR>
 
 " deploy the gundo tree
 nnoremap <Leader>ud :GundoToggle<CR>
+
+" shortcut for header guards
+map <Leader>ah :HeaderguardAdd<cr>
+
+" suppress ValueError warning from ycm
+set shortmess=a
+" get rid of Press Enter to continue
+set cmdheight=2
