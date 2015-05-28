@@ -311,8 +311,9 @@ let NERDTreeAutoDeleteBuffer=1
 " show/hide MiniBufExplorer window
 map <Leader>bl :MBEToggle<cr>
 " shortcut for switch
-map <C-Tab> :MBEbn<cr>
-map <C-S-Tab> :MBEbp<cr>
+map <Leader>bn :MBEbn<cr>
+map <Leader>bp :MBEbp<cr>
+map <Leader>bd :MBEbd<cr>
 
 " setup for environment saving
 set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
