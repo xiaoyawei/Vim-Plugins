@@ -54,6 +54,13 @@ In `.vimrc`, the `ctags` of *C++ Standard Library* is included by
 set tags+=/usr/include/c++/4.8/stdcpp.tags
 ~~~
 
+Please generate these files by
+
+~~~
+cd /usr/include/c++/4.8
+ctags -R --c++-kinds=+l+x+p --fields=+iaSl --extra=+q --language-force=c++ -f stdcpp.tags
+~~~
+
 In `.ycm_extra_conf.py`, the `flag` list also contains `'/usr/include/c++/4.8/'`. Please replace them based on the path of your own *C++ Standard Library*.
 
 ### Usage
