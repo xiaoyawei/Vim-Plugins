@@ -44,16 +44,18 @@ set cursorline
 " set showmatch
 " highlight the unmatched parenthesis
 let loaded_matchparen=1
+" highlight the matching parenthesis
+
 
 " set indent configs
 filetype indent on
-set tabstop=4
-set cindent shiftwidth=4
-set autoindent shiftwidth=4
-set smartindent shiftwidth=4
+set tabstop=2
+set cindent shiftwidth=2
+set autoindent shiftwidth=2
+set smartindent shiftwidth=2
 set expandtab
 " clear multiple blanks
-set softtabstop=4
+set softtabstop=2
 
 " highlight the matched pattern
 set hlsearch
