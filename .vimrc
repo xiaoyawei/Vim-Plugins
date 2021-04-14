@@ -4,6 +4,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+set backspace=indent,eol,start
 au BufWinEnter,BufNewFile * silent tab
 
 setlocal textwidth=100
